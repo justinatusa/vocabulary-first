@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Vocabulary-First">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1419"/>
+      <stop offset="55%" stop-color="#161c24"/>
+      <stop offset="100%" stop-color="#1a2330"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a86c"/>
+      <stop offset="100%" stop-color="#e8d5a3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#c9a86c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c9a86c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#glow)"/>
+  <!-- thin frame -->
+  <rect x="36" y="36" width="1128" height="348" fill="none" stroke="#c9a86c" stroke-opacity="0.28" stroke-width="1"/>
+  <line x1="80" y1="210" x2="200" y2="210" stroke="url(#gold)" stroke-width="1.5" stroke-opacity="0.7"/>
+  <text x="80" y="168" fill="#e8d5a3" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="6">VOCABULARY · FIRST</text>
+  <text x="80" y="248" fill="#f4f0e6" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="400">先对齐名字，再进入领域</text>
+  <text x="80" y="300" fill="#9aa3ad" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20">领域词表，是人与模型之间的接口</text>
+  <!-- decorative seal -->
+  <circle cx="1040" cy="210" r="58" fill="none" stroke="#c9a86c" stroke-opacity="0.45" stroke-width="1"/>
+  <circle cx="1040" cy="210" r="46" fill="none" stroke="#c9a86c" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1040" y="218" text-anchor="middle" fill="#e8d5a3" font-family="Georgia, serif" font-size="28">名</text>
+</svg>
