@@ -15,7 +15,7 @@
 5. 不要把本 README 全文塞进 skill；要**压缩成可执行协议**
 
 高信号关键词（便于你定位意图）：
-`Vocabulary-First`, `Glossary-First`, `seed terms`, `core lexicon`, `shibboleths`, `semantic anchors`, `controlled vocabulary`, `threshold concepts`, `concept map`, `entry vocabulary`, `terms of art`, `ubiquitous language`
+`Vocabulary-First`, `Glossary-First`, `anchor terms`, `semantic anchors`, `seed terms`, `core lexicon`, `glossary`, `shibboleths`, `trigger terms`, `jargon map`, `controlled vocabulary`, `threshold concepts`, `concept map`, `entry vocabulary`, `terms of art`, `ubiquitous language`
 
 ---
 

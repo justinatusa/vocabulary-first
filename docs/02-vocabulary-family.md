@@ -63,3 +63,38 @@
 ## 中文可用说法
 
 种子词、核心词表、专名、圈内暗号、受控词表、术语表、门槛概念、概念图、语义锚、词表优先 / 术语表优先。
+
+---
+
+## 候选词取舍表（补充检索后的合并结论）
+
+来源：对话中的自搜 + 二次补搜。只保留对「写 prompt / 学领域 / 变 skill」真有用的；不合适的明确剔除或降级。
+
+| 名词 | 适用场景 | 能否写进 prompt 描述需求 | 本仓库态度 |
+|---|---|---|---|
+| **Anchor terms / Semantic anchors** | Prompt 工程；短名激活大块训练知识 | ✅ 强烈推荐 | **首选之一**（与 seed/glossary 并列） |
+| **Trigger terms / context trigger words** | 知识唤起；glossary 懒加载匹配 | ✅ 可用 | 推荐作「机制说明」：词出现 → 注入定义 |
+| **Glossary** | 人机共享术语表 | ✅ 推荐 | 已是主干（Glossary-First） |
+| **Jargon / domain jargon** | 通用行话 | ✅ 可用但偏宽 | 保留；写 prompt 时最好收窄成 high-signal jargon |
+| **Jargon map** | 行话 → 含义/关系的地图 | ✅ 可用 | 作 concept map 的口语近亲 |
+| **Domain shorthand** | 工程口语速记 | ✅ 可用 | 降级为 seed/shibboleth 的别称，不单列为主概念 |
+| **Chunk（认知组块）** | 认知心理学：一次握住的信息块 | ⚠️ 解释原理可用 | **可写在说明里**；勿与 RAG text chunking 混淆 |
+| **Tacit knowledge（默会知识）** | 指背后那套不会说的知 | ❌ 不是那些关键词 | **保留为反例**：别用它指「要的那串词」 |
+| **Indexical term（索引词）** | 语言学冷门 | ❌ 工程对话少用 | **不收入主词表** |
+
+### 补搜后额外值得挂上的
+
+| 名词 | 为什么有价值 |
+|---|---|
+| **Semantic Anchors**（方法名目录） | 有公开目录与实验：专名比长段释义更能稳定激活方法知识 |
+| **Agent Glossary + trigger 懒加载** | 词作 trigger，命中才注入定义；词表可很大、上下文仍瘦 |
+| **Domain glossary = context compression** | 规范词把多句解释压成短柄，命名一致性上升 |
+| **Semantic compression（具名指针）** | 「用标准名当 pointer，别重讲模型已知的常识」——与 anchor 同构 |
+
+### 写 prompt 时的优先顺序（实操）
+
+1. 要入口/骨架清单 → `seed terms` + `core lexicon` / `glossary`  
+2. 要「一说就激活方法」→ `anchor terms` / `semantic anchors`  
+3. 要圈内定位/防邻域跑偏 → `shibboleths` / `high-signal jargon`  
+4. 要外行话换标准名 → `entry vocabulary`  
+5. 要关系图 → `concept map` 或口语 `jargon map`  

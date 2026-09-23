@@ -18,9 +18,11 @@
 
 **没有唯一官方词。** 你要的是一簇近亲概念，对外最好叫：
 
-- **Vocabulary-First / Glossary-First**（用法总称）
-- 日常三件套：**seed terms** + **core lexicon / glossary** + **shibboleths**
-- 进阶可加：**semantic anchors**、**controlled vocabulary**、**threshold concepts**、**concept map**、**entry vocabulary**
+- **Vocabulary-First / Glossary-First**（用法层总称）
+- 写进 prompt 很贴的叫法：**anchor terms / semantic anchors**、**seed terms**、**glossary**
+- 日常三件套：**seed terms** + **core lexicon / glossary** + **shibboleths**（或 high-signal jargon）
+- 进阶可加：**trigger terms**、**controlled vocabulary**、**threshold concepts**、**concept map**、**entry vocabulary**、**jargon map**
+- 慎用/别混：**tacit knowledge**（指隐性知识本身，不是那些词）；RAG 的 **chunk** ≠ 认知组块
 
 闭环：
 

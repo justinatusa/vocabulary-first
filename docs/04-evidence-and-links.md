@@ -61,4 +61,32 @@
 
 1. 用户要找的不是单一英文词，而是 **可写入 prompt 的总称簇**。  
 2. 比喻「锚点」有直觉，但 **seed / lexicon / shibboleth / glossary-first** 更可执行。  
-3. **文件级一致**（会跑）与 **流水线文件**（会发版）可分离——同理，学习时词表齐了就能学，不必先有完美 ontology。  
+3. **文件级一致**（会跑）与 **流水线文件**（会发版）可分离——同理，学习时词表齐了就能学，不必先有完美 ontology。
+
+---
+
+## 补充检索（第二轮）
+
+### Anchor / Semantic Anchors
+
+- [LLM-Coding/Semantic-Anchors](https://github.com/LLM-Coding/Semantic-Anchors)：专名激活方法知识；强调 Names beat descriptions。
+- [Augmented Coding Patterns · Semantic Anchors](https://lexler.github.io/augmented-coding-patterns/patterns/semantic-anchors/)：有对照实验叙述（点名 vs 只描述）。
+- [Promptwatch · Anchor Terms](https://promptwatch.com/glossary/anchor-terms)：偏 GEO/品牌归因的「锚术语」——**相近但不是同一问题**；本仓库主推的是 prompt 侧 semantic anchors，不把 GEO 义项当主定义。
+
+### Glossary as trigger / 懒加载
+
+- [Agent Glossary 思路（Medium）](https://ronie.medium.com/agent-glossary-teaching-agents-our-shared-language-93bae9674b02)：共享短柄；出现术语再注入定义。
+- [ruliana/pi-glossary](https://github.com/ruliana/pi-glossary)：用 term/alias/regex 作 **trigger**，懒加载 glossary。
+- 实践笔记：[Three weeks using glossaries for agents](https://ronie.medium.com/three-weeks-using-glossaries-for-agents-4f3c85b49cb5)
+
+### 压缩与领域词表
+
+- Domain glossary 常被写成「上下文压缩 / 命名一致性」手段（多见于 agent 工程笔记）。
+- 「具名概念当 pointer」与 anchor terms 同构；RAG 的 semantic **chunking** 是另一回事，勿混进「认知组块」讨论。
+
+### 取舍摘要
+
+收入主叙事：**anchor terms / semantic anchors**、**trigger terms**（机制）、**glossary**、**jargon map**（近亲）。  
+降级：**domain shorthand**。  
+原理向备注：**chunk（认知）**。  
+显式排除当「那些词」用：**tacit knowledge**、**indexical term**。
