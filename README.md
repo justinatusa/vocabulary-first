@@ -87,6 +87,7 @@
 | [04 · 证据与链接](docs/04-evidence-and-links.md) | 外部出处 |
 | [05 · Skill 种子](docs/05-skill-seeds.md) | 压缩协议给模型用 |
 | [样例 · HTTP API](examples/http-api.md) | 一份填好的小词表 |
+| [门面清单](docs/github-front-door-checklist.md) | 开新仓时的可复用门面检查（给其他 AI 用） |
 
 正文用第三人称直叙，方便自己回看，也方便转给别人。
 
@@ -106,7 +107,7 @@
 
 ## 许可
 
-[MIT](LICENSE)
+[MIT](LICENSE)。分享预览图见 [`assets/social-preview.png`](assets/social-preview.png)（GitHub Settings → Social preview 上传）。
 
 ---
 
